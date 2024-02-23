@@ -1,0 +1,41 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://us.123rf.com/450wm/yupiramos/yupiramos1705/yupiramos170537961/79308541-pop-corn-avec-soda-cin%C3%A9ma-alimentaire-vector-illustration-design.jpg" />
+
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">My List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">New List</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="banner" style="background-position: top; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://benoitmars.com/wp-content/uploads/blog/animations/leo-wolf-dance.gif);">
+  <div class="container">
+    <h1>Save any kind of movies 🍿</h1>
+  </div>
+</div>
+
+<div style="display: flex; justify-content: space-between; padding: 50px;">
+    <h3 style="text-align: center">My lists</h3>
+    <a class="btn btn-primary" href="#">Add a movie list</a>
+</div>
+    <div style="display: flex; justify-content: center">
+      <% @lists.each do |list| %>
+        <div class="card-category m-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://upopi.ciclic.fr/sites/default/files/styles/auto_1920/public/pleasantville01.png?itok=hC2tD1wg)">
+          <%= list.name %>
+        </div>
+      <% end %>
+    </div>
